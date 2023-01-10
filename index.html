@@ -109,97 +109,12 @@
             </div>
             <ul class="tabs">
                 <li class="tabs__item">
-                    <button class="active tabs__button" id="reg-btn-tel"><span class="tabs__button-title">Telefonal</span>
-                    </button>
-                </li>
-                <li class="tabs__item">
                     <button class="tabs__button" id="reg-btn-email"><span class="tabs__button-title">Email Yoluyla</span>
                     </button>
                 </li>
             </ul>
             <div class="forms">
-                <form class="active" id="phone-form" name="form-reg" method="post" action="{{ACTION}}">
-                    <div class="phone-form">
-                        <h3 class="phone-form__header">Telefon numaranızı girin</h3>
-                        <div class="select-phone">
-                            <div class="select-phone__placeholder">
-                                <img class="select-phone__placeholder-logo js--phone">
-                                <input class="select-phone__placeholder-input js--phoneInput" required type="tel" tabindex="-1" data-property="default" id="phone-id" minlength="3" name="phone">
-                                <button class="select-phone__placeholder-btn js--ctrl js--phone" type="button" aria-label="Открыть список стран">
-                                </button>
-                                <button class="confirm-button" type="button">
-                                                    sms gönder
-                                                </button>
-                            </div>
-                            <ul class="select-phone__list">
-                            </ul>
-                        </div>
-                        <div class="conformation-code">
-                                            <div class="conformation-code__placeholder">
-                                              
-                                                <input class="" required="" type="tel" tabindex="-1" data-property="default" id="phone-id" minlength="3" name="phone" placeholder="Onay kodu"> 
-                                                <button class="confirm-button" type="button">
-                                                    Onaylamak
-                                                </button>
-                                            </div>
-                                            <ul class="select-phone__list">
-                                            </ul>
-                                        </div>
-                        <div class="select-currency">
-                            <button class="select-currency__main js--currency" type="button">
-                                <div class="select-currency__placeholder">
-                                    <div class="select-currency__icon"><i class="select-currency__icon-font"></i>
-                                    </div>
-                                    <div class="select-currency__name">
-                                    </div>
-                                    <div class="select-currency__text">
-                                    </div>
-                                </div>
-                                <input class="select-currency__default-input" tabindex="-1" name="currency">
-                                <input type="hidden" id="backurl" name="backurl" value="">
-                                <input type="hidden" id="lang" name="lang" value="">
-                                <input type="hidden" id="st" name="st" value="">
-                                <input type="hidden" id="s1" name="s1" value="">
-                                <input type="hidden" id="s2" name="s2" value="">
-                                <input type="hidden" id="s3" name="s3" value="">
-                                <input type="hidden" id="s4" name="s4" value="">
-                                <input type="hidden" id="s5" name="s5" value="">
-                                <input type="hidden" id="pc" name="pc" value="">
-                                <input type="hidden" id="form_email" name="form_email" value="">
-                                <input type="hidden" id="form_phone" name="form_phone" value="">
-                                <input type="hidden" id="form_key" name="form_key" value="">
-                            </button>
-                            <ul class="select-currency__list">
-                            </ul>
-                        </div>
-                    </div>
-                    <button style="display:none" class="submit-btn" type="button">Ikramiye almak</button>
-                    <div
-                            style="height: 50px; width: 100%; display:flex; align-items: center; justify-content: center; background: #ff2400; border-radius: 5px;cursor:pointer;"
-                         class="f_btn">Register</div>
-                    <div class="forms__questions"><span class="alredy-registred">Ya tienes una cuenta?</span><a class="forms__signin-link redirectlink" href="#">Inicio de Sesión</a>
-                    </div>
-                    <div class="checkbox">
-                        <div class="checkbox__item checkbox__item_rules">
-                            <input class="checkbox__input" type="checkbox" checked id="check-rules-p" required>
-                            <label class="checkbox__label" for="check-rules-p"><span class="checkbox__label-icon"></span>
-                            </label>
-                            <div class="checkbox__text">
-                                <p>Estoy de acuerdo con<a class="checkbox__text-link redirectlinkTerms" href="#">términos y condiciones</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="checkbox__item checkbox__item_sub">
-                            <input class="checkbox__input" type="checkbox" checked id="check-subs-p">
-                            <label class="checkbox__label" for="check-subs-p"><span class="checkbox__label-icon"></span>
-                            </label>
-                            <div class="checkbox__text">
-                                <p>Recibe boletines informativos sobre promociones en correos electrónicos y sms</p>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <form id="email-form" name="email-reg" method="post" action="{{ACTION}}">
+                <form class="active" id="email-form" name="email-reg" method="post" action="{{ACTION}}">
                     <div class="email-form">
                         <div class="email-form__item">
                             <input class="email-form__email-input" type="text" required placeholder="E-mail" id="email-input" name="email">
