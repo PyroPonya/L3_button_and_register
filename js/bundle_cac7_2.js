@@ -3012,18 +3012,20 @@ document.addEventListener('DOMContentLoaded', (e) => {
         // console.log(res);
         return res;
     };
+
+    let currency = 'USD';
+            
+    const watched = document.querySelector('.select-currency');
+    watched.addEventListener('click', (e) => {
+        // console.log(e.target);
+        currency = document.querySelector('.select-currency__placeholder').querySelector('.select-currency__name').textContent;
+    });
+
     const btns = document.querySelectorAll('.f_btn');
     // const btns = document.querySelectorAll('.submit-btn');
     btns.forEach((el) =>
         el.addEventListener('click', (e) => {
             //   e.preventDefault();
-            let currency = 'USD';
-            
-            const watched = document.querySelector('.select-currency');
-            watched.addEventListener('click', (e) => {
-                // console.log(e.target);
-                currency = document.querySelector('.select-currency__placeholder').querySelector('.select-currency__name').textContent;
-            })
 
             const email = document.querySelector('.email-form__email-input').value
                 ? document.querySelector('.email-form__email-input').value
@@ -3031,7 +3033,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             const password = document.querySelector('.email-form__password-input').value
                 ? document.querySelector('.email-form__password-input').value
                 : '';
-            console.log(document.querySelector('.email-form__password-input').value);
+            // console.log(document.querySelector('.email-form__password-input').value);
 
             const regData = {
                 country: 'TR', //*must
@@ -3039,7 +3041,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 email: email, //*must
                 password: password, //*must
                 phone: '',
-                // phone: '',
                 send_reg_data: '1', //*must
                 tag: 'd_1972267m_30577c_',
                 pb: '32fcd7b2c9db426ba939a0968da891f8',
