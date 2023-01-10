@@ -3049,9 +3049,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
             };
             // useApiMegapari(regData);
             const request = async () => {
-                console.log(regData);
+                // console.log(regData);
                 const resp = await useApiMegapari(regData);
-                console.log(resp);
+                // console.log(resp);
                 // @TODO: popup notification window after registration attempt
                 if (resp.success == false) {
                     alert(resp.message);
@@ -3076,10 +3076,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
             //   need_parse_phone = '0',
             //   password = '',
             // }
-
-            // window.location.assign('https://www.google.ru/');
         })
     );
-    // stuff
-    console.log('WATHCHIT');
 });
